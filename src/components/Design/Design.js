@@ -1,7 +1,7 @@
 import React from 'react'
 import './Design.css'
 
-export const Design = ({display}) => {
+export const Design = ({display , textFormat}) => {
     return (
         <div className="card card-content">
             <div className="imgTshirt text-center">
@@ -14,14 +14,14 @@ export const Design = ({display}) => {
                 
             <div className="memeside text-center">
                 <div className="uppertext">
-                    <p>{display.upperText}</p>
+                    <p  style={{fontSize:textFormat , color:  display.TextColor , fontFamily : display. FontStyle}}>{display.upperText}</p>
                 </div>
                 <img 
                 className = "imgmeme"
                 src={`${display.url}` || "http://via.placeholder.com/400x300" }
                 alt="Imgforshirt" />
                 <div className="lowertext">
-                    <p>{display.lowerText}</p>
+                    <p style={{fontSize:textFormat , color : display.TextColor , fontFamily : display. FontStyle}}>{display.lowerText}</p>
                 </div>
             </div>
 

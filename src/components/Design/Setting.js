@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Setting = ({color ,uppertext , lowertext , uploadImage}) => {
+export const Setting = ({color ,uppertext , lowertext , uploadImage , Textsize , TextColor , Fontstyle }) => {
     return (
         <div className="card bg-light container">
             <h2 className="text-center">Settings</h2>
@@ -23,15 +23,31 @@ export const Setting = ({color ,uppertext , lowertext , uploadImage}) => {
             </div>
             <hr/>
             <h4>Text Size :</h4>
-            <input type="range" min="0" max="100" />
+            <input onChange={Textsize} type="range" min="12" max="40" />
             <hr/>
             <h4>Text Color :</h4>
-            <select>
+            <select onChange={TextColor}>
                 <option>White</option>
                 <option>black</option>
                 <option>Blue</option>
                 <option>grey</option>
                 <option>red</option>
+                <option>pink</option>
+                <option>#ff69b4</option>
+                <option>yellow</option>
+            </select>
+            <hr/>
+            <h4>Font family</h4>
+            <select onChange={Fontstyle}>
+                <option>'Courier New', Courier, monospace</option>
+                <option> Arial, Helvetica, sans-serif</option>
+                <option> 'Arial Narrow', Arial, sans-serif</option>
+                <option>'Times New Roman'</option>
+                <option>'Segoe UI'</option>
+                <option>'Helvetica Neue'</option>
+                <option>Verdana</option>
+                <option>Geneva</option>
+                <option>sans-serif</option>
             </select>
             <hr/>
             <button className="btn btn-primary btn-sm-mb-2 savebtn">Save</button>
