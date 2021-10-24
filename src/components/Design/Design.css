@@ -1,0 +1,46 @@
+.imgTshirt
+{
+    position: relative;
+}
+
+.memeside
+{
+    position: absolute;
+    top: 195px;
+    left: 220px;
+}
+
+.imgmeme
+{
+    width: 280px;
+    height: 200px;
+}
+
+.memeside p{
+    font-size: 30px;
+    color: white;
+}
+
+.T-shirt-color
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.T-shirt-color img
+{
+    width: 60px;
+    height: 60px;
+}
+
+.form1
+{
+    margin-top: 20px;
+}
+
+.savebtn
+{
+    margin-top: 20px;
+}
