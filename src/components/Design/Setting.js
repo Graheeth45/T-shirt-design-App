@@ -35,6 +35,8 @@ export const Setting = ({color ,uppertext , lowertext , uploadImage , Textsize ,
                 <option>pink</option>
                 <option>#ff69b4</option>
                 <option>yellow</option>
+                <option>#8F3985</option>
+                <option>#D28140</option>
             </select>
             <hr/>
             <h4>Font family</h4>
