@@ -1,0 +1,13 @@
+.project-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-fluid
+{
+    height: 10rem;
+    width: 10rem;
+}

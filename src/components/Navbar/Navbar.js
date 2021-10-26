@@ -7,7 +7,7 @@ class Navbar extends Component {
         return(
             <nav class="navbar navbar-light bg-warning">
                 <div className="Appnavbar">
-                   <Link class="navbar-brand" href="/">hello World</Link>
+                   <Link class="navbar-brand" href="/">Happy design</Link>
                    <Link class="navbar-brand Sign-In" href="/">Sign In</Link>
                    <Link class="navbar-brand Log-In" href="/">Log In</Link>
                 </div>
